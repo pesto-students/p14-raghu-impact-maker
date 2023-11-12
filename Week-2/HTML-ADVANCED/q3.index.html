@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .date{
+              margin: 10px 0;
+            }
+         .players{
+              margin: 20px 0;
+            }
+        .input label {
+              display: inline-block;
+              width: 150px;
+        }
+        .status {
+            border: 1px solid red;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+<h1>Starting Lineup</h1>
+
+<form method="post" enctype="multipart/form-data">
+
+
+
+    <p>
+    <fieldset>
+        <legend>Status:</legend>
+
+        <input type="radio" value="Draft" name="status" />
+        <label>Draft</label>
+
+
+        <input type="radio" value="Final" name="status" checked />
+        <label>Final</label>
+
+    </fieldset>
+    </p>
+
+
+    <div class="date">
+        <Label>Date</Label>
+        <select name="Gamedate">
+            <option value="March 20">March 20</option>
+            <option value="March 24">March 24</option>
+            <option value="Arpil 2">Arpil 2</option>
+            <option value="Arpil 6">Arpil 6</option>
+            <option value="Arpil 13">Arpil 13</option>
+
+        </select>
+    </div>
+
+    <fieldset class="players">
+        <legend>Players:</legend>
+
+        <label>
+            <input type="checkbox" value="Aarav Agarwal" name="player" />
+            Aarav Agarwal
+        </label> <br>
+
+        <label>
+            <input type="checkbox" value="Ava Johnson" name="player"  />
+            Ava Johnson</label> <br>
+
+        <label>
+            <input type="checkbox" value="Julio ortiz" name="player"  />
+            Julio ortiz</label> <br>
+
+        <label>
+            <input type="checkbox" value="Liam Rubio" name="player"  />
+            Liam Rubio</label> <br>
+
+
+        <input type="checkbox" value="Emma witherspoon" name="player"/>
+        Emma witherspoon</label> <br>
+
+    </fieldset>
+
+    <Input type="submit" value="Submit">
+    </div>
+</form>
+
+</body>
+
+</html>

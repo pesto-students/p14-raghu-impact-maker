@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .inputs{
+         margin: 10px 0;
+     }
+
+    </style>
+
+</head>
+
+<body>
+<header>
+    <h1>Restaurant Reviews</h1>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="#" class="active">Add Review</a>
+        <a href="./about.html">About</a>
+    </nav>
+</header>
+<main>
+    <h2>Add Review</h2>
+    <form method="post" enctype="multipart/form-data">
+        <div class="inputs">
+            <label>Name?</label>
+            <input type="text" />
+        </div>
+        <div class="inputs">
+            <label>Restaurant?</label>
+            <select >
+                <option value="" >Choose one...</option>
+                <option value="Main Street Cafe">Main Street Cafe</option>
+                <option value="Greek House">Greek House</option>
+            </select>
+        </div>
+        <div class="inputs">
+            <label>Date of visit?</label>
+            <input type="date"/>
+        </div>
+        <div>
+            <label >Rating?</label>
+            <input type="number"  value="5" min="1" max="5" style="width:10em" 				/>
+        </div>
+        <div class="inputs">
+            <label >Details?</label>
+            <textarea  rows="4" cols="40">
+                </textarea>
+        </div>
+        <div class="inputs">
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+</main>
+<footer>
+    <p>&copy; 2023 Restaurant Reviews</p>
+</footer>
+</body>
+
+</html>
